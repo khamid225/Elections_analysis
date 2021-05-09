@@ -127,7 +127,7 @@ with open(file_to_save, "w") as txt_file:
 
 
 #         # 6b: Retrieve the county vote count.
-           county_vote = county_votes['county_name']
+           county_vote = county_votes.get(county_name)
            print(county_vote)
 
 #         # 6c: Calculate the percentage of votes for the county.
